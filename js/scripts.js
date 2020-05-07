@@ -21,7 +21,7 @@ function tallyResults(){
       bPython++;
       } 
     else if (questionAnswer === "c") {
-      JS++;
+      cJS++;
       } 
     else if (questionAnswer === "d")  {
       dGo++;
@@ -31,7 +31,11 @@ function tallyResults(){
       }
    }
 
+   //create an array ranking answers
+
 }
+
+
 
 //User Interface Logic 
 $(document).ready(function() {
@@ -46,6 +50,8 @@ $(document).ready(function() {
     $("#results").toggle();
     $("#blanks").toggle();
 
+    //display information on first 3 elements of array
+  
     event.preventDefault();
   });
 });
