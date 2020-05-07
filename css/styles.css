@@ -1,3 +1,7 @@
 #results {
   display: none;
 }
+
+.btn{
+  border: 3px red solid;
+}

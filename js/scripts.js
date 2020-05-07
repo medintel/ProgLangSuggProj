@@ -7,9 +7,7 @@ function tallyResults(){
   var eCs = 0;
 
   var questionAnswer; 
-
   var questions = document.getElementsByClassName("quizQuestion");
-
   var questionsTotal = 5;
 
   for(var i = 0; i < questionsTotal; i++) {
@@ -31,8 +29,9 @@ function tallyResults(){
       }
    }
 
-   //create an array ranking answers
-
+   var results = [aRuby, bPython, cJS, dGo, eCs];
+   results.sort();
+   results.reverse();
 }
 
 
@@ -50,7 +49,50 @@ $(document).ready(function() {
     $("#results").toggle();
     $("#blanks").toggle();
 
+  
     //display information on first 3 elements of array
+    //will revise and delete repetition when able
+  //   $("#rank1").tallyResults(); {
+  //   if (results[0] === aRuby) {
+  //     $('#Ruby').show();
+  //   } else if (results[0] === bPython) {
+  //     $('#Python').show();
+  //   } else if (results[0] === cJS) {
+  //     $('#JS').show();
+  //   } else if (results[0] === dGo) {
+  //     $('#Go').show();
+  //   } else if (results[0] === eCs) {
+  //     $('#Cs').show();
+  //   }
+  // };
+
+ // (document).ready(function() {
+  //   if (results[1] === aRuby) {
+  //     $('#Ruby').show();
+  //   } else if (results[1] === bPython) {
+  //     $('#Python').show();
+  //   } else if (results[1]  === cJS) {
+  //     $('#JS').show();
+  //   } else if (results[1] === dGo) {
+  //     $('#Go').show();
+  //   } else if (results[1]  === eCs) {
+  //     $('#Cs').show();
+  //   }
+  // });
+  
+ // (document).ready(function() {
+  //   if (resultsArray3 === aRuby) {
+  //     $('#Ruby').show();
+  //   } else if (results[1] === bPython) {
+  //     $('#Python').show();
+  //   } else if (results[1] === cJS) {
+  //     $('#JS').show();
+  //   } else if (results[1] === dGo) {
+  //     $('#Go').show();
+  //   } else if (rresults[1] === eCs) {
+  //     $('#Cs').show();
+  //   }
+  // });
   
     event.preventDefault();
   });
