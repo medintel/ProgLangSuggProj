@@ -1,4 +1,4 @@
-//Business Logic
+
 function tallyResults(){
   var aRuby = 0;
   var bPython = 0;
@@ -32,22 +32,39 @@ function tallyResults(){
    var results = [aRuby, bPython, cJS, dGo, eCs];
    results.sort();
    results.reverse();
+   var rank1 = results[0];
+   var rank2 = results[1];
+   var rank3 = results[2];
+
 }
 
 
-
-//User Interface Logic 
 $(document).ready(function() {
-  $("#blanks form").submit(function() {
-    var blanks = ["userName"];
 
-    blanks.forEach(function(blank) {
-      var userInput = $("input#" + blank).val();
-      $("." + blank).text(userInput).val();      
-    });
+$
 
-    $("#results").toggle();
-    $("#blanks").toggle();
+
+
+    // alert (userName);
+  // $("form#questions").submit(function(){
+  //   event.preventDefault();
+  //    alert('Here is the order of your ranking: 1.' + rank1 ' 2.' + rank2 ' and 3.' + rank3);
+  // });
+
+  // $("#blanks form").submit(function() {
+  //   var blanks = ["userName"];
+
+  //   blanks.forEach(function(blank) {
+  //     var userInput = $("input#" + blank).val();
+  //     $("." + blank).text(userInput).val();      
+
+  // $("#blanks questions"  
+  // blanks.submit(tallyResults() {
+  //     alert('Here is the order of your ranking: 1.' + rank1 ' 2.' + rank2 ' and 3.' + rank3);
+      
+  // });
+  // });
+
 
   
     //display information on first 3 elements of array
@@ -66,34 +83,11 @@ $(document).ready(function() {
   //   }
   // };
 
- // (document).ready(function() {
-  //   if (results[1] === aRuby) {
-  //     $('#Ruby').show();
-  //   } else if (results[1] === bPython) {
-  //     $('#Python').show();
-  //   } else if (results[1]  === cJS) {
-  //     $('#JS').show();
-  //   } else if (results[1] === dGo) {
-  //     $('#Go').show();
-  //   } else if (results[1]  === eCs) {
-  //     $('#Cs').show();
-  //   }
-  // });
+  $("#results").toggle();
+  $("#blanks").toggle();
   
- // (document).ready(function() {
-  //   if (resultsArray3 === aRuby) {
-  //     $('#Ruby').show();
-  //   } else if (results[1] === bPython) {
-  //     $('#Python').show();
-  //   } else if (results[1] === cJS) {
-  //     $('#JS').show();
-  //   } else if (results[1] === dGo) {
-  //     $('#Go').show();
-  //   } else if (rresults[1] === eCs) {
-  //     $('#Cs').show();
-  //   }
-  // });
+    
+
+
   
-    event.preventDefault();
-  });
-});
+}):

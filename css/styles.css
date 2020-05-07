@@ -5,3 +5,7 @@
 .btn{
   border: 3px red solid;
 }
+
+#ruby, #python, #js, #go, #cs{
+  display: none;
+}
