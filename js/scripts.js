@@ -41,53 +41,48 @@ function tallyResults(){
 
 $(document).ready(function() {
 
-$
+  $("form#questions").submit(function(){
+      $("#quizQuestion").tallyResults() {
+        if (rank1 || rank2 || rank3  === aRuby) {
+          ("#ruby").show();
+        }
+        else if (rank1 || rank2 || rank3  === bPython) {
+          ("#python").show();
+        }
+        else if (rank1 || rank2 || rank3  === cJS) {
+          ("#js").show();
+        }
+        else if (rank1 || rank2 || rank3  === dGo) {
+          ("#go").show();
+        }
+        else if (rank1 || rank2 || rank3  === eCs) {
+          ("#cs").show();
+        }
+        else {
+          alert("Something went wrong!")
+        }
+     }
+    });
 
+    $("form#blanks").submit(function() {
+      var blanks = ["userName"];
 
+      blanks.forEach(function(blank) {
+        var userInput = $("input#" + blank).val();
+        $("." + blank).text(userInput).val();      
 
-    // alert (userName);
-  // $("form#questions").submit(function(){
-  //   event.preventDefault();
-  //    alert('Here is the order of your ranking: 1.' + rank1 ' 2.' + rank2 ' and 3.' + rank3);
-  // });
+≈
+    });
 
-  // $("#blanks form").submit(function() {
-  //   var blanks = ["userName"];
+    event.preventDefault();
 
-  //   blanks.forEach(function(blank) {
-  //     var userInput = $("input#" + blank).val();
-  //     $("." + blank).text(userInput).val();      
+  $("button").click(function() {
+    $("." + blanks).toggle();
+    $("." + results).toggle();
+  });
+  
 
-  // $("#blanks questions"  
-  // blanks.submit(tallyResults() {
-  //     alert('Here is the order of your ranking: 1.' + rank1 ' 2.' + rank2 ' and 3.' + rank3);
-      
-  // });
-  // });
-
+});
 
   
-    //display information on first 3 elements of array
-    //will revise and delete repetition when able
-  //   $("#rank1").tallyResults(); {
-  //   if (results[0] === aRuby) {
-  //     $('#Ruby').show();
-  //   } else if (results[0] === bPython) {
-  //     $('#Python').show();
-  //   } else if (results[0] === cJS) {
-  //     $('#JS').show();
-  //   } else if (results[0] === dGo) {
-  //     $('#Go').show();
-  //   } else if (results[0] === eCs) {
-  //     $('#Cs').show();
-  //   }
-  // };
-
-  $("#results").toggle();
-  $("#blanks").toggle();
-  
-    
-
-
-  
-}):
+})
