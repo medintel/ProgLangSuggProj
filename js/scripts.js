@@ -71,7 +71,6 @@ $(document).ready(function() {
         var userInput = $("input#" + blank).val();
         $("." + blank).text(userInput).val();      
 
-≈
     });
 
     event.preventDefault();
@@ -83,6 +82,3 @@ $(document).ready(function() {
   
 
 });
-
-  
-})
