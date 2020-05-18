@@ -40,15 +40,99 @@
             </ul> 
           </div>
 
+          <div class="form-group" id="questions">
+            <h3>2. Where do you want to live? </h3>
+             <ul>
+               <div class="form-group">
+                <input type="radio" id="question2" name="live" value="ruby" checked> <label for ="ruby"> In a hut in Bali</label>
+               </div>
+               <div class="form-group">
+                <input type="radio" id="question2" name="live" value="python"><label for ="python"> Downtown in a fun city</label>
+               </div>          
+               <div class="form-group">
+                <input type="radio" id="question2" name="live" value="js"><label for ="js"> In a nice house with a yard</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question2" name="live" value="go"><label for ="go"> On an urban island with a small forest</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question2" name="live" value="cs"><label for ="cs"> Anywhere near your family</label>
+               </div>
+             </ul> 
+           </div>
+
+           <div class="form-group" id="questions">
+            <h3>3. What do you want to do with your work?</h3>
+             <ul>
+               <div class="form-group">
+                <input type="radio" id="question3" name="work" value="ruby" checked> <label for ="ruby"> Build cutting edge apps!</label>
+               </div>
+               <div class="form-group">
+                <input type="radio" id="question3" name="work" value="python"><label for ="python">  Fanagle data into consumable charts!</label>
+               </div>          
+               <div class="form-group">
+                <input type="radio" id="question3" name="work" value="js"><label for ="js">  Be able to work on anything!</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question3" name="work" value="go"><label for ="go">  Work on a new reliable programming standard!</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question3" name="work" value="cs"><label for ="cs"> Create solid frameworks!</label>
+               </div>
+             </ul> 
+           </div>
+
+           <div class="form-group" id="questions">
+            <h3>4. What does your computer desktop look like? </h3>
+             <ul>
+               <div class="form-group">
+                <input type="radio" id="question4" name="desktop" value="ruby" checked> <label for ="ruby"> Collection of new and old icons, files, and pictures</label>
+               </div>
+               <div class="form-group">
+                <input type="radio" id="question4" name="desktop" value="python"><label for ="python"> Apps and files downloaded in the last few months</label>
+               </div>          
+               <div class="form-group">
+                <input type="radio" id="question4" name="desktop" value="js"><label for ="js"> Regulary used programs and files seperated in groups</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question4" name="desktop" value="go"><label for ="go"> Clean and streamlined</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question4" name="desktop" value="cs"><label for ="cs">  Highly organized and labeled</label>
+               </div>
+             </ul> 
+           </div>
+
+           <div class="form-group" id="questions">
+            <h3>5. What is your favorite combination of colors? </h3>
+             <ul>
+               <div class="form-group">
+                <input type="radio" id="question4" name="colors" value="ruby" checked> <label for ="ruby"> Bright, bold contrasts</label>
+               </div>
+               <div class="form-group">
+                <input type="radio" id="question4" name="colors" value="python"><label for ="python"> Earth tones</label>
+               </div>          
+               <div class="form-group">
+                <input type="radio" id="question4" name="colors" value="js"><label for ="js"> The rainbow spectrum</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question4" name="colors" value="go"><label for ="go"> Metallic and soft contrasts</label>
+               </div>
+               <div class="form-group">
+                 <input type="radio" id="question4" name="colors" value="cs"><label for ="cs">  Neutrals</label>
+               </div>
+             </ul> 
+           </div>
+
           <button type="submit" class="btn">Show my results!</button>
         </form>
     
         <div id="results">
           <h1>Survey Results</h1>
-          <h4><span class="userName"></span>, please keep mind that many languages have similarities. However, here are the top 3 languages this biased, inaccurate survey suggests for you:</h4>
-          <ul>
-            <li> Here are your top 3 languages: </li>
-            <li>
+          <h4><span class="userName"></span>, here are the languages we recommend for you. <br> <br> Please keep mind that many languages have similarities, and this a biased survey!</h4>
+
+            <p>Here are your top languages:</p>
+            <ul>
               <div id="ruby"><li><a href="https://www.ruby-lang.org/en/"> Learn Ruby!</a></li></div>
   
               <div id="python"><li><a href="https://www.python.org/about/gettingstarted/"> Learn Python!</a></li></div>
@@ -58,10 +142,9 @@
               <div id="go"><li><a href="https://golang.org/"> Learn Go!</a></li></div>
   
               <div id="cs"><li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework"> Learn C#!</a></li></div>
-          </ul>
+            </ul>
         </div>
     
-          
     </div>
   </body>
 </html> 
