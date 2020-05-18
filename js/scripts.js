@@ -46,6 +46,13 @@ $(document).ready(function() {
     // $(".userName").append(inputName);
     $(".userName").text(inputName).val();
 
+    const formAnswers = ["question1", "question2", "question3", "question4", "question5"];
+    formAnswers.forEach(function(blank) {
+      let formInput = $("input." + blank).val();
+      $("." + blank).text(formInput).val()
+      alert(formInput);
+      alert("yeah!");
+    });
 
         //     var userInput = $("input#" + blank).val();
     //     $("." + blank).text(userInput).val();
