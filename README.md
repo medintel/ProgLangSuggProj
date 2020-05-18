@@ -1,6 +1,7 @@
 # progSelect.html
 
-###  Webpage to assist users in selecting a programming language to learn, 5/7/2020
+###  Saterical webpage to assist users in selecting a programming language to learn
+# 5/7/2020, updated 5/17/20
 
 Author Name: Jamie Mieras
 
@@ -12,7 +13,7 @@ Program Setup: open projSelect.html in browser that is capable of running JavaSc
 
 Technologies used: HTML, CSS, JavaScript, jQuery.
 
-Link to GitHub Page: not yet published
+Link to GitHub Page: https://github.com/medintel/ProgLangSuggProj
 
 Licensing: This software is licensed under the MIT license. 
 Copyright (c) 2020 Jamie Mieras 
