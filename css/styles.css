@@ -1,9 +1,9 @@
-#results {
-  display: none;
-}
-
 .btn{
   border: 3px red solid;
+}
+
+#results{
+  display: none;
 }
 
 #ruby, #python, #js, #go, #cs{

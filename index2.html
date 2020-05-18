@@ -4,20 +4,16 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.5.0.js"></script>
-    <script src="js/scripts2.js"></script>
+    <script src="js/scripts.js"></script>
     <title>Programming Language Suggestion Tool</title>
   </head>
 
   <body>
     <div class="container">
       <h1>Programming Language Suggestion Tool</h1>
-    
-      <!-- <div id="blanks"> -->
-        <div id="intro">
-          <p>Thinking about learning how to program? Choose from the below options to determine the best language for you. </p>
-        </div>        
-        
-        <form>
+      <form id="blanks">
+          <p>Thinking about learning how to program? Choose from the below options to determine the best language for you. </p>      
+
           <div class="form-group">
             <label for="userName">Please enter your name: </label>
             <input id="userName" class="form-control" type="text">
@@ -27,44 +23,46 @@
            <h3>1. What kind of dog would you be? </h3>
             <ul>
               <div class="form-group">
-               <input type="radio" id="question1" name="dog" value="ruby"><label for ="ruby">Labrador</label>
+               <label for ="ruby">  Labrador</label>
+               <input type="radio" id="question1" name="dog" value="ruby" checked>
               </div>
               <div class="form-group">
-               <input type="radio" id="question1" name="dog" value="python"><label for ="python">Goldendoodle</label>
+               <input type="radio" id="question1" name="dog" value="python"><label for ="python">  Goldendoodle</label>
               </div>          
               <div class="form-group">
-               <input type="radio" id="question1" name="dog" value="js"><label for ="js">Corgi</label>
+               <input type="radio" id="question1" name="dog" value="js"><label for ="js">  Corgi</label>
               </div>
               <div class="form-group">
-                <input type="radio" id="question1" name="dog" value="go"><label for ="go">Pointer</label>
+                <input type="radio" id="question1" name="dog" value="go"><label for ="go">  Pointer</label>
               </div>
               <div class="form-group">
-                <input type="radio" id="question1" name="dog" value="cs"><label for ="cs">German Shepard</label>
+                <input type="radio" id="question1" name="dog" value="cs"><label for ="cs">  German Shepard</label>
               </div>
             </ul> 
           </div>
+
+          <button type="submit" class="btn">Show my results!</button>
         </form>
-      <!-- </div> -->
     
-          <div id="results">
-            <h1>Survey Results</h1>
-            <h4><span id="userName"></span>, please keep mind that many languages have similarities. However, here are the top 3 languages this biased, inaccurate survey suggests for you:</h4>
-            <ul>
-              <li> Here are your top 3 languages: </li>
-              <li>
-                <div id="ruby"><li><a href="https://www.ruby-lang.org/en/"> Learn Ruby!</a></li></div>
-    
-                <div id="python"><li><a href="https://www.python.org/about/gettingstarted/"> Learn Python!</a></li></div>
-    
-                <div id="js"><li><a href="https://en.wikipedia.org/wiki/JavaScript"> Learn JavaScript!</a></li></div>
-    
-                <div id="go"><li><a href="https://golang.org/"> Learn Go!</a></li></div>
-    
-                <div id="cs"><li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework"> Learn C#!</a></li></div>
-            </ul>
-          </div>
+        <div id="results">
+          <h1>Survey Results</h1>
+          <h4><span id="userName"></span>, please keep mind that many languages have similarities. However, here are the top 3 languages this biased, inaccurate survey suggests for you:</h4>
+          <ul>
+            <li> Here are your top 3 languages: </li>
+            <li>
+              <div id="ruby"><li><a href="https://www.ruby-lang.org/en/"> Learn Ruby!</a></li></div>
+  
+              <div id="python"><li><a href="https://www.python.org/about/gettingstarted/"> Learn Python!</a></li></div>
+  
+              <div id="js"><li><a href="https://en.wikipedia.org/wiki/JavaScript"> Learn JavaScript!</a></li></div>
+  
+              <div id="go"><li><a href="https://golang.org/"> Learn Go!</a></li></div>
+  
+              <div id="cs"><li><a href="https://docs.microsoft.com/en-us/dotnet/csharp/getting-started/introduction-to-the-csharp-language-and-the-net-framework"> Learn C#!</a></li></div>
+          </ul>
+        </div>
     
           
-        </div>
-      </body>
-    </html> 
+    </div>
+  </body>
+</html> 
