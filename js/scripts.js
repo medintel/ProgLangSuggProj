@@ -12,23 +12,29 @@ $(document).ready(function() {
     const formAnswer5 = $("input:radio[name=colors]:checked").val();
 
     const answerArray = [formAnswer1, formAnswer2, formAnswer3,formAnswer4, formAnswer5]
-    alert(answerArray);
-    alert (answerArray.includes(ruby));
-    if (answerArray.includes(ruby)) {
-         ("#ruby").toggle();
-    }
-    else {
-      alert("not ruby");
-    }
-    // if answerArray.includes(python) {
-    //   $("#python").show():
-    // }
+    // alert(answerArray);
 
+   if (answerArray.includes('ruby')) {
+         $("#ruby").show();
+    }
+    // else {
+    //   alert("not ruby");
+    // };
+    if (answerArray.includes('python')) {
+      $("#python").show();
+    }
+    if (answerArray.includes('js')) {
+      $("#js").show();
+    }
+    if (answerArray.includes('go')) {
+      $("#go").show();
+    }
+    if (answerArray.includes('cs')) {
+      $("#cs").show();
+    }
 
     $("#results").toggle();
     $("#blanks").toggle();
-
-
 
   });
 });
