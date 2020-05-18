@@ -46,13 +46,20 @@ $(document).ready(function() {
     // $(".userName").append(inputName);
     $(".userName").text(inputName).val();
 
-    const formAnswers = ["question1", "question2", "question3", "question4", "question5"];
-    formAnswers.forEach(function(blank) {
-      let formInput = $("input." + blank).val();
-      $("." + blank).text(formInput).val()
-      alert(formInput);
-      alert("yeah!");
-    });
+    const formAnswer1 = $("input:radio[name=dog]:checked").val();
+    const formAnswer2 = $("input:radio[name=live]:checked").val();
+    const formAnswer3 = $("input:radio[name=work]:checked").val();
+    const formAnswer4 = $("input:radio[name=desktop]:checked").val();
+    const formAnswer5 = $("input:radio[name=colors]:checked").val();
+
+    let answerArray = [formAnswer1, formAnswer2, formAnswer3,formAnswer4, formAnswer5]
+    alert(answerArray);
+    // const formAnswers = ["question1", "question2", "question3", "question4", "question5"];
+    // formAnswers.forEach(function(blank) {   
+      // let formInput = $("input" + blank).val();
+      // $("." + blank).text(formInput).val()
+      
+    // });
 
         //     var userInput = $("input#" + blank).val();
     //     $("." + blank).text(userInput).val();
