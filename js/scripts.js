@@ -42,8 +42,8 @@
 $(document).ready(function() {
   $("#blanks").submit(function(event){
     event.preventDefault();
-    // const inputName = $("input#userName").val();
-    $(".userName").append("this is the name");
+    const inputName = $("input#userName").val();
+    $(".userName").append(inputName);
 
 
 
