@@ -43,29 +43,20 @@ $(document).ready(function() {
   $("#blanks").submit(function(event){
     event.preventDefault();
     const inputName = $("input#userName").val();
-    $(".userName").append(inputName);
+    // $(".userName").append(inputName);
+    $(".userName").text(inputName).val();
 
 
+        //     var userInput = $("input#" + blank).val();
+    //     $("." + blank).text(userInput).val();
 
-    // $("button").click(function () {
-    //   $("." + blanks).toggle();
-    //   $("." + results).toggle();
-    // });
-  
-    // $("button").click(function () {
-    // $("btn").click(function() {
     $("#results").toggle();
     $("#blanks").toggle();
-      // });
 
 
-          // $("form#blanks").submit(function() {
 
-    //   blanks.forEach(function(blank) {
-    //     var userInput = $("input#" + blank).val();
-    //     $("." + blank).text(userInput).val();
-    //    });
-    // });
+
+
 
   });
 });
@@ -110,6 +101,14 @@ $(document).ready(function() {
   //   $("#blanks").toggle();
   //   $("#results").toggle();
 //   });
+
+    // $("button").click(function () {
+    //   $("." + blanks).toggle();
+    //   $("." + results).toggle();
+    // });
+  
+    // $("button").click(function () {
+    // $("btn").click(function() {
 
 //   // event.preventDefault();
 
