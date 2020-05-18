@@ -40,8 +40,12 @@
 
 
 $(document).ready(function() {
-  $("#blanks").submit(function(){
+  $("#blanks").submit(function(event){
     event.preventDefault();
+    // const inputName = $("input#userName").val();
+    $(".userName").append("this is the name");
+
+
 
     // $("button").click(function () {
     //   $("." + blanks).toggle();
@@ -52,8 +56,16 @@ $(document).ready(function() {
     // $("btn").click(function() {
     $("#results").toggle();
     $("#blanks").toggle();
-    alert("Hi");
       // });
+
+
+          // $("form#blanks").submit(function() {
+
+    //   blanks.forEach(function(blank) {
+    //     var userInput = $("input#" + blank).val();
+    //     $("." + blank).text(userInput).val();
+    //    });
+    // });
 
   });
 });
